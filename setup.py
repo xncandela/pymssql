@@ -106,6 +106,7 @@ def fs_cleanup(files=None, dirs=None):
     A context manager to remove ``files`` and ``dirs`` from the
     source tree. Useful to cleanup anciliary intermediate files.
     """
+
     yield
     if files:
         for fname in files:
