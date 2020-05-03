@@ -25,7 +25,7 @@ import os
 import os.path as osp
 import sys
 import platform
-import distro
+
 
 # Hack to prevent stupid TypeError: 'NoneType' object is not callable error on
 # exit of python setup.py test in multiprocessing/util.py _exit_function when
