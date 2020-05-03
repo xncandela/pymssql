@@ -30,5 +30,5 @@ pid = sys.argv[1]
 p = Popen(['ps', 'ufp', pid], stdout=PIPE, stdin=PIPE)
 p.wait()
 (vss, rss) = map(int, p.stdout.read().splitlines()[-1].split()[4:6])
-print 'VSS: %-8s (%s)' % (fsize(vss), vss)
-print 'RSS: %-8s (%s)' % (fsize(rss), rss)
+print('VSS: %-8s (%s)' % (fsize(vss), vss))
+print('RSS: %-8s (%s)' % (fsize(rss), rss))
